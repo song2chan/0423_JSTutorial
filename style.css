@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+}
+
+.dayMode {
+  color: blue;
+  background-color: white;
+}
+.nightMode {
+  color: red;
+  background-color: black;
+}

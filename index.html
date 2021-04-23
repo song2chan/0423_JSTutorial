@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>daynight shift</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class=dayMode>
+    <button class=day onclick=shiftFunc(this.className)>day</button>
+    <button class=night onclick=shiftFunc(this.className)>night</button>
+    text
+    <script>
+      function shiftFunc(className) {
+        switch (className) {
+          case 'day':
+            document.body.className = 'dayMode';
+            break;
+          case 'night':
+            document.body.className = 'nightMode';
+            break;
+        }
+      }
+    </script>
+  </body>
+<!--따옴표 안써도 잘 되고 큰따옴표랑 작은따옴표 차이가 없는 듯? 그냥 기호에 따라 쓰는거인가..
+    검색 결과: XHTML이란걸 쓸 때는 문자열을 표현할 때 따옴표를 쓰는게 필수였는데 HTML5로 들어서면서
+    안써도 되게 되었지만.. 습관처럼 다들 쓰는거라고한다. 그렇다면 쓰는게 맞겠지!
+    작은따옴표와 큰따옴표의 경우 취향이지만 c기반의 언어에서는 문자열을 큰따옴표로 감싸기 때문에
+    큰따옴표를 선호하게 된 사람들이 좀 더 많은듯?-->
+</html>
